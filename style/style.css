@@ -1,3 +1,9 @@
+*{
+	margin:0px;
+}
+::selection{
+	background:#00ffff;
+}
 body{
 	text-align:center;
 	font-size:25px;
@@ -6,20 +12,26 @@ h1{
 	color:blue;
 	background:#00ffff;
 }
+h1::selection{
+	background:#0000ff;
+	color:white;
+}
 li.top{
 	float:left;
 	height:70px;
 	margin:0px;
-	padding-left:15px;
-	padding-right:15px;
-	background:#aaffff;
+	//padding-left:20px;
+	//padding-right:20px;
+	padding:30px;
+	padding-top:0px;
+	padding-bottom:0px;
 }
 ul.top{
 	list-style:none;
 	font-size:15px;
 	height:70px;
 	line-height:70px;
-	background:#ccffff;
+	background:#aaffff;
 	display:block;
 }
 a{
@@ -28,4 +40,14 @@ a{
 }
 a.top{
 	color:#000000;
+}
+li.top,a.top{
+	transition-property:background,transform;
+	transition-duration:0.5s;
+	background:#aaffff;
+}
+li.top:hover,a.top:hover{
+	transition:0.5s;
+	transform:translateY(15px);
+	background:#88ffff;
 }
