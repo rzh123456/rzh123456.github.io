@@ -16,6 +16,10 @@ h1::selection{
 	background:#0000ff;
 	color:white;
 }
+h2.cls404{
+	color:red;
+	font-size:250px;
+}
 li.top{
 	float:left;
 	height:70px;
