@@ -19,11 +19,22 @@ body.calc{
 }
 .btn{
 	padding:5px;
-	cursor:pointer;
 	font-size:20px;
+	margin:5px;
+	cursor:pointer;
 	height:50px;
 	width:50px;
-	margin:5px;
+}
+.ioput{
+	outline:none;
+	display:inline-block;
+	border-radius:10px;
+	border:red;
+	box-shadow:inset 0px 5px 0px #cccccc;
+	font-size:23px;
+	cursor:insert;
+	height:50px;
+	width:200px;
 }
 .num{
 	background:#ffffbb;
