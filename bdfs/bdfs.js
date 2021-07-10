@@ -3,6 +3,7 @@ var len;
 var tbox,crt;
 var delta=150;
 var vname="q",word,info,interv;
+var debugging=0;
 function gebi(id){
 	return document.getElementById(id);
 }
@@ -16,7 +17,9 @@ function writeWord(){
 function bdyx(){
 	info.innerHTML="这对你来说有那么难吗？"; 
 	gebi("baiduyixia").className="baidua";
-	setTimeout('window.location.href="https://www.baidu.com/s?wd="+word',250);
+	if(!debugging){
+		setTimeout('window.location.href="https://www.baidu.com/s?wd="+word',250);
+	}
 }
 function anim(){
 	tbox=gebi("bdinput");
@@ -30,6 +33,11 @@ function anim(){
 	setTimeout('info.innerHTML="点击“百度一下”";',wlen*delta+500);
 	setTimeout("bdyx();",wlen*delta+1200);
 }
+function rzh_bdfs_debug(){
+	debugging=1;
+	word="调试(Debug)";
+	console.log("感谢您使用本网站！Thank you!");
+}
 window.onload=function(){
 	console.log("Baidu:https://www.baidu.com");
 	console.log("This website is made by rzh.You can visit https://rzh123456.github.io to visit me!");
@@ -37,21 +45,26 @@ window.onload=function(){
 	len=prm.length;
 	info=gebi("info");
 	//alert(window.location.search);
-	if(prm.slice(0,vname.length+2)==("?"+vname+"=")){
-		word=prm.slice(vname.length+2);
-		//document.write(word);
+	if(prm=="?debug"){
+		rzh_bdfs_debug();
 	}
 	else{
-		word="";
-		window.location.href="bdfs_gen.html";
+		if(prm.slice(0,vname.length+2)==("?"+vname+"=")){
+			word=prm.slice(vname.length+2);
+			//document.write(word);
+		}
+		else{
+			word="";
+			window.location.href="bdfs_gen.html";
+		}
+		word=decodeURI(word);
 	}
-	word=decodeURI(word);
 	wlen=word.length;
 	setTimeout("anim();",1000);
-	/*
-		首先，打开百度 
-		然后，输入你想要知道的内容 
-		点击“百度一下” 
-		这对你来说有那么难吗？ 
-	*/
+		/*
+			首先，打开百度 
+			然后，输入你想要知道的内容 
+			点击“百度一下” 
+			这对你来说有那么难吗？ 
+		*/
 }

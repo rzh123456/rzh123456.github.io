@@ -56,3 +56,6 @@ body{
     background-image:linear-gradient(#fff,rgba(255,255,255,0) 100%);
     margin-left:-50px;
 }
+hr{
+	margin-top:250px;
+}
