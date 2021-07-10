@@ -1,0 +1,58 @@
+body{
+	text-align:center;
+}
+.bdfs_top{
+	margin-top:50px;
+}
+.btnspan{
+	width: 107px;
+    height: 42px;
+    display: inline-block;
+    position: relative;
+}
+#baidu_logo{
+	vertical-align:middle;
+    height:85px;
+    margin-bottom:40px;
+    padding:10px;
+}
+#bdinput{
+	width:489px;
+    height:20px;
+    padding:9px 7px;
+    font:16px arial;
+    border:1px solid #b8b8b8;
+    vertical-align: top;
+    outline:0;
+}
+#baiduyixia{
+	width:105px;
+    height:40px;
+    padding:0;
+    border:0;
+	left:-10px;
+    cursor:pointer;
+    font-size:16px;
+    margin:0;
+    position:absolute;
+    outline:0;
+}
+.baiduua{
+	background:url(bdbk.png) no-repeat #fff 0 -43px;
+}
+#baiduyixia:active,.baidua{
+	background:url(bdbk.png) no-repeat #fff -136px -43px;
+}
+#info{
+    display:inline-block;
+    margin-top:40px;
+    min-width:250px;
+    padding:1em 2em;
+    color:#414141;
+    background-color: #F0F5F8;
+    border:1px solid #B1B1B1;
+    border-radius: 10px;
+    font-size:1.1em;
+    background-image:linear-gradient(#fff,rgba(255,255,255,0) 100%);
+    margin-left:-50px;
+}
