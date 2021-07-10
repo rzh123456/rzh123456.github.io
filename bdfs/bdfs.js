@@ -14,20 +14,20 @@ function writeWord(){
 	}
 }
 function bdyx(){
-	info.innerHTML="Õâ¶ÔÄãÀ´ËµÓĞÄÇÃ´ÄÑÂğ£¿"; 
+	info.innerHTML="è¿™å¯¹ä½ æ¥è¯´æœ‰é‚£ä¹ˆéš¾å—ï¼Ÿ"; 
 	gebi("baiduyixia").className="baidua";
 	setTimeout('window.location.href="https://www.baidu.com/s?wd="+word',250);
 }
 function anim(){
 	tbox=gebi("bdinput");
-	info.innerHTML="È»ºó£¬ÊäÈëÄãÏëÒªÖªµÀµÄÄÚÈİ"
+	info.innerHTML="ç„¶åï¼Œè¾“å…¥ä½ æƒ³è¦çŸ¥é“çš„å†…å®¹"
 	/*for(var i=0;i<wlen;++i){
 		//window.setTimeout("tbox.value+=word.charAt("+i+");",100);
 		//tbox.value+=word.charAt(i);
 	}*/
 	crt=0;
 	interv=setInterval("writeWord();",delta);
-	setTimeout('info.innerHTML="µã»÷¡°°Ù¶ÈÒ»ÏÂ¡±";',wlen*delta+500);
+	setTimeout('info.innerHTML="ç‚¹å‡»â€œç™¾åº¦ä¸€ä¸‹â€";',wlen*delta+500);
 	setTimeout("bdyx();",wlen*delta+1200);
 }
 window.onload=function(){
@@ -49,9 +49,9 @@ window.onload=function(){
 	wlen=word.length;
 	setTimeout("anim();",1000);
 	/*
-		Ê×ÏÈ£¬´ò¿ª°Ù¶È 
-		È»ºó£¬ÊäÈëÄãÏëÒªÖªµÀµÄÄÚÈİ 
-		µã»÷¡°°Ù¶ÈÒ»ÏÂ¡± 
-		Õâ¶ÔÄãÀ´ËµÓĞÄÇÃ´ÄÑÂğ£¿ 
+		é¦–å…ˆï¼Œæ‰“å¼€ç™¾åº¦ 
+		ç„¶åï¼Œè¾“å…¥ä½ æƒ³è¦çŸ¥é“çš„å†…å®¹ 
+		ç‚¹å‡»â€œç™¾åº¦ä¸€ä¸‹â€ 
+		è¿™å¯¹ä½ æ¥è¯´æœ‰é‚£ä¹ˆéš¾å—ï¼Ÿ 
 	*/
 }
