@@ -4,6 +4,7 @@ var tbox,crt;
 var delta=150;
 var vname="q",word,info,interv;
 var debugging=0;
+var mouse,aim,crtx,crty,aimx,aimy;
 function gebi(id){
 	return document.getElementById(id);
 }
@@ -16,8 +17,12 @@ function writeWord(){
 }
 function bdyx(){
 	info.innerHTML="这对你来说有那么难吗？"; 
-	gebi("baiduyixia").className="baidua";
-	if(!debugging){
+	if(debugging){
+		//gebi("baiduyixia").className="baidua mouse_hand";
+		gebi("baiduyixia").className="baidua nomouse";
+	}
+	else{
+		gebi("baiduyixia").className="baidua nomouse";
 		setTimeout('window.location.href="https://www.baidu.com/s?wd="+word',250);
 	}
 }
@@ -36,6 +41,9 @@ function anim(){
 function rzh_bdfs_debug(){
 	debugging=1;
 	word="调试(Debug)";
+	//gebi("html_main").className="";
+	//gebi("bdinput").className="";
+	//gebi("baiduyixia").className="baiduua mouse_hand";
 	console.log("感谢您使用本网站！Thank you!");
 }
 window.onload=function(){
@@ -60,6 +68,12 @@ window.onload=function(){
 		word=decodeURI(word);
 	}
 	wlen=word.length;
+	aim=gebi("bdinput"),
+	mouse=gebi("mouse");
+	aimx=aim.offsetLeft,
+	aimy=aim.offsetTop,
+	crtx=crty=0;
+	interv=setInterval("movems();",50);
 	setTimeout("anim();",1000);
 		/*
 			首先，打开百度 

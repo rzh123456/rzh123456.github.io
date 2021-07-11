@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html id="html_main" class="nomouse">
 	<head>
+		<title>让我帮你百度一下</title>
 		<link rel="stylesheet" href="bdfs.css">
 		<script src="bdfs.js"></script>
 	</head>
 	<body>
+		<img id="mouse" src="mouse.png">
 		<div id="BDFS_HEADLINE">
 			<p class="bdfs_top">
 				Let&nbsp;me&nbsp;
@@ -13,13 +15,15 @@
 			</p>
 		</div>
 		<div id="baidukuang">
-			<input type="text" id="bdinput" autocomplete="off" maxlength="100">
+			<input type="text" id="bdinput" autocomplete="off" maxlength="100" class="nomouse">
 			<span class="btnspan">
-				<input type="button" value="百度一下" id="baiduyixia" class="baiduua">
+				<input type="button" value="百度一下" id="baiduyixia" class="baiduua nomouse">
 			</span>
 		</div>
 		<div id="info">首先，打开百度</div>
 		<hr>
-		<p>rzh</p>
+		<p>(Q) 2021 DS Company</p>
+		<p>本站与百度公司没有任何联系，baidu以及本站出现的<a href="baidu.png" style="text-decoration:none;color:blue;">百度公司Logo</a>是百度公司的商标。</p>
+		<p>Copyleft, all rights reversed.</p>
 	</body>
 </html>

@@ -1,9 +1,5 @@
 body{
 	text-align:center;
-	margin:0px;
-}
-.nomouse{
-	cursor:none;
 }
 .bdfs_top{
 	margin-top:50px;
@@ -13,11 +9,6 @@ body{
     height: 42px;
     display: inline-block;
     position: relative;
-}
-#mouse{
-	position:absolute;
-	top:0px;
-	left:0px;
 }
 #baidu_logo{
 	vertical-align:middle;
@@ -40,13 +31,11 @@ body{
     padding:0;
     border:0;
 	left:-10px;
+    cursor:pointer;
     font-size:16px;
     margin:0;
     position:absolute;
     outline:0;
-}
-.mouse_hand{
-	cursor:pointer;
 }
 .baiduua{
 	background:url(bdbk.png) no-repeat #fff 0 -43px;
@@ -70,4 +59,3 @@ body{
 hr{
 	margin-top:250px;
 }
-.
