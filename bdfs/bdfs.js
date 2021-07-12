@@ -8,6 +8,25 @@ var mouse,aim,crtx,crty,aimx,aimy;
 function gebi(id){
 	return document.getElementById(id);
 }
+function specchar(src){
+	var srcl=src.length,ret="";
+	var ctmp;
+	for(var i=0;i<srcl;++i){
+		ctmp=src.charAt(i);
+		switch(ctmp){
+			case '+':ret+="%2B";break;
+			case ' ':ret+="%20";break;
+			case '/':ret+="%2F";break;
+			case '?':ret+="%2F";break;
+			case '%':ret+="%2F";break;
+			case '#':ret+="%2F";break;
+			case '&':ret+="%2F";break;
+			case '=':ret+="%2F";break;
+			default:ret+=ctmp;
+		}
+	}
+	return ret;
+}
 function writeWord(){
 	tbox.value+=word.charAt(crt);
 	++crt;
@@ -23,7 +42,7 @@ function bdyx(){
 	}
 	else{
 		gebi("baiduyixia").className="baidua nomouse";
-		setTimeout('window.location.href="https://www.baidu.com/s?wd="+word',250);
+		setTimeout('window.location.href="https://www.baidu.com/s?wd="+specchar(word)',250);
 	}
 }
 function anim(){
