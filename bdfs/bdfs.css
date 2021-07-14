@@ -18,6 +18,10 @@ body{
 	position:absolute;
 	top:0px;
 	left:0px;
+	z-index:100;
+}
+p.bdfs_top{
+	font-size:25px;
 }
 #baidu_logo{
 	vertical-align:middle;

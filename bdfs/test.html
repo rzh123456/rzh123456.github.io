@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <title>Document</title> 
+ <style> 
+  a { 
+   cursor: pointer; 
+  } 
+  #cell { 
+   width: 30px; 
+   height: 30px; 
+   background: red; 
+   position: relative; 
+   left: 0; 
+   top: 0; 
+  } 
+ </style> 
+</head> 
+<body onload="move()"> 
+ <p>友情提示：请按键盘上的上下左右键</p> 
+ <div id="cell"></div> 
+ <script> 
+  
+  function move() { 
+   var a = document.getElementById("cell"); 
+   a.style.left = 0; 
+   a.style.top = 0; 
+   document.onkeydown = function(e) { 
+    var e = window.event ? window.event : e; 
+    if(e.keyCode == 38) { //up 
+     a.style.top = parseInt(a.style.top) - 50 + 'px'; 
+     //注意要用parseInt 因为a.style.top类型是字符串 
+    } 
+    if(e.keyCode == 40) { //down 
+     a.style.top = parseInt(a.style.top) + 50 + 'px'; 
+    } 
+    if(e.keyCode == 37) { //left 
+     a.style.left = parseInt(a.style.left) - 50 + 'px'; 
+    } 
+    if(e.keyCode == 39) { //right 
+     a.style.left = parseInt(a.style.left) + 50 + 'px'; 
+    } 
+   } 
+  } 
+ </script> 
+</body> 
+</html>

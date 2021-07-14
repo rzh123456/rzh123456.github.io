@@ -1,10 +1,13 @@
 var word,prm,wlen;
 var len;
 var tbox,crt;
-var delta=150;
+var delta=150,mdelta=50;
+var cnt=0;
 var vname="q",word,info,interv;
 var debugging=0;
 var mouse,aim,crtx,crty,aimx,aimy;
+var dx,dy;
+var bdyxbtn;
 function gebi(id){
 	return document.getElementById(id);
 }
@@ -26,6 +29,46 @@ function specchar(src){
 		}
 	}
 	return ret;
+}
+function getTop(e){
+	var offset=e.offsetTop;
+	if(e.offsetParent!=null){
+		offset+=getTop(e.offsetParent);
+	}
+	return offset;
+}
+function getLeft(e){
+	var offset=e.offsetLeft;
+	if(e.offsetParent!=null){
+		offset+=getLeft(e.offsetParent);
+	}
+	return offset;
+}
+function xmove(dis){
+	mouse.style.left=(parseInt(mouse.style.left)+dis)+'px';
+}
+function ymove(dis){
+	mouse.style.top=(parseInt(mouse.style.top)+dis)+'px';
+}
+function movems(){
+	xmove(dx),
+	ymove(dy);
+	++cnt;
+	if(cnt>20){
+		clearInterval(interv);
+	}
+}
+function move2(){
+	xmove(dx);
+	++cnt;
+	if(cnt>20){
+		clearInterval(interv);
+	}
+}
+function slidems(ax,ay){
+	dx=ax/20.0,
+	dy=ay/20.0;
+	interv=setInterval("movems();",mdelta);
 }
 function writeWord(){
 	tbox.value+=word.charAt(crt);
@@ -55,7 +98,14 @@ function anim(){
 	crt=0;
 	interv=setInterval("writeWord();",delta);
 	setTimeout('info.innerHTML="点击“百度一下”";',wlen*delta+500);
-	setTimeout("bdyx();",wlen*delta+1200);
+	bdyxbtn=gebi("baiduyixia");
+	aimx=getLeft(bdyxbtn),
+	aimy=getTop(bdyxbtn);
+	//slidems(aimx,aimy);
+	cnt=0;
+	dx=(aimx-parseInt(mouse.offsetLeft))/20.0;
+	setTimeout('interv=setInterval("move2();",mdelta);',wlen*delta+800);
+	setTimeout("bdyx();",wlen*delta+mdelta*20+1200);
 }
 function rzh_bdfs_debug(){
 	debugging=1;
@@ -67,7 +117,7 @@ function rzh_bdfs_debug(){
 }
 window.onload=function(){
 	console.log("Baidu:https://www.baidu.com");
-	console.log("This website is made by rzh.You can visit https://rzh123456.github.io to visit me!");
+	console.log("This website is made by rzh.Please visit me on https://rzh123456.github.io !");
 	prm=window.location.search;
 	len=prm.length;
 	info=gebi("info");
@@ -89,11 +139,12 @@ window.onload=function(){
 	wlen=word.length;
 	aim=gebi("bdinput"),
 	mouse=gebi("mouse");
-	aimx=aim.offsetLeft,
-	aimy=aim.offsetTop,
+	mouse.style.left=mouse.style.top=0;
+	aimx=aim.offsetLeft+0,
+	aimy=aim.offsetTop+10,
 	crtx=crty=0;
-	interv=setInterval("movems();",50);
-	setTimeout("anim();",1000);
+	slidems(aimx,aimy);
+	setTimeout("anim();",20*mdelta+250);
 		/*
 			首先，打开百度 
 			然后，输入你想要知道的内容 
