@@ -1,0 +1,18 @@
+/*
+Resources:
+1	wood
+2	iron
+3	
+*/
+
+/*
+Tools:
+1	axe
+2	saw
+3	laser
+4	tractor
+11	pickaxe
+12	mining machine
+13	huge mining machine
+14	
+*/
