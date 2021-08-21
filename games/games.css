@@ -1,0 +1,15 @@
+div.box{
+	display:inline-block;
+	width:500px;
+	background:#aaffff;
+}
+ul{
+	list-style:none;
+	padding-inline-start:0px;
+}
+li{
+	margin:20px;
+	padding:10px;
+	list-style:none;
+	background:#00ffff;
+}

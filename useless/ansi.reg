@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Notepad]
+
+"iDefaultEncoding"=dword:00000001
+
+; 1 = ANSI
+
+; 2 = UTF-16 LE
+
+; 3 = UTF-16 BE
+
+; 4 = UTF-8 BOM
+
+; 5 = UTF-8
