@@ -1,7 +1,12 @@
+*{
+	margin:0px;
+}
 body{
 	/*text-align:center;*/
+	margin:10px;
 }
 .title{
+	margin-bottom:20px;
 	padding:20px;
 	border-width:2px;
 	border-color:#000000;
@@ -59,4 +64,34 @@ body{
 }
 .hidden{
 	display:none;
+}
+.box_left{
+	display:inline-block;
+	background:#dddddd;
+	width:200px;
+}
+.op{
+	margin:0px;
+}
+.box_right{
+	display:inline-block;
+	background:#cccccc;
+	vertical-align:top;
+}
+.rs_item{
+	background:#eeeeee;
+	border-bottom:solid 1px #666666;
+	padding:20px;
+}
+.rsname{
+	margin-left:10px;
+	width:30px;
+}
+.rs_title{
+	display:block;	
+}
+.tl_item{
+	background:#ffffff;
+	border-bottom:solid 1px #666666;
+	padding:20px;
 }
