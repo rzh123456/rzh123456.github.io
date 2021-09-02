@@ -5,7 +5,7 @@ var intId,running;
 var dir=new Array(0, 0,1, 0,-1, 1,0, -1,0, 1,1, 1,-1, -1,1, -1,-1);
 function init(){
 	h=50;
-	w=30;
+	w=50;
 	cw=25;
 	interv=1000;
 	running=0;
@@ -143,6 +143,7 @@ function save(){
 	txt=btoa(txt);
 	console.log(txt);
 	copy(txt);
+	alert('已将数据保存到剪贴板，可以粘贴到文件中保存。\n\n(如果没有复制成功，也可以按 F12 在控制台中查看)');
 }
 function copy(str) {
 	let oInput=document.createElement('input');
@@ -157,7 +158,8 @@ var ostr,readp;
 function ascii(x){return x.charCodeAt(0);}
 function isdigit(x){var xx=ascii(x);return xx>=48&&xx<=57;}
 function gc(){return ostr.charAt(readp++);}
-function read(txt){
+function read(){
+	if(readp>=ostr.length) return -1;
 	var f=1,t=0,c=gc();
 	while(c!='-'&&(!isdigit(c))) c=gc();
 	if(c=='-') f=-1,c=gc();

@@ -7,9 +7,12 @@ body{
 }
 h1{
 	margin:5px;
+	color:#0080ff
 }
 div.game{
 	display:inline-block;
+	overflow:auto;
+	border:solid 1px #dfdfdf;
 }
 ul{
 	list-style:none;
@@ -34,4 +37,20 @@ li{
 }
 .blue{
 	background:#0080ff;
+}
+.ww_btn{
+	margin-bottom:15px;
+	margin-left:10px;
+	outline:none;
+	border-radius:5px;
+	width:50px;
+	height:30px;
+	background:#dfdfdf;
+	box-shadow:0px 5px #666666;
+	font-weight:600;
+	cursor:pointer;
+}
+.ww_btn:active{
+	transform:translateY(3px);
+	box-shadow:0px 2px #666666;
 }
