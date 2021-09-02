@@ -11,12 +11,14 @@ h1{
 }
 div.game{
 	display:inline-block;
-	overflow:auto;
+	/*overflow:scroll;*/
 	border:solid 1px #dfdfdf;
+	white-space:nowrap;
 }
 ul{
 	list-style:none;
 	display:block;
+	white-space:nowrap;
 }
 li{
 	margin:-1px;
@@ -25,6 +27,7 @@ li{
 	display:inline-block;
 	background:white;
 	border:solid 1px #dfdfdf;
+	white-space:nowrap;
 }
 .white{
 	background:#ffffff;
