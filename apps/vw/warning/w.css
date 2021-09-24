@@ -1,0 +1,18 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	padding-top:50px;
+	padding-left:50px;
+	font-size:50px;
+	text-align:left;
+	background:#ccffff;
+}
+h1{
+	font-size:80px;
+}
+a{
+	color:#0055ff;
+	text-decoration:none;
+}
