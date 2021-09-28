@@ -1,0 +1,3 @@
+欢迎使用 rzh123 整理的 Dev-C++ 安装包！
+
+网页版：https://rzh123456.github.io/articles/download_devcpp.txt
