@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>通过$.getJSON获取json的代码</title>
+<script type="text/javascript" src="https://www.jb51.net/jslib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<div id="ok"></div>
+<script>
+$(function(){ 
+$.getJSON("da.json",function(data){ 
+var $jsontip = $("#ok"); 
+var strHtml = "";//存储数据的变量 
+$jsontip.empty();//清空内容 
+$.each(data,function(infoIndex,info){
+    strHtml += "<a href='" + info["url"] + "' target='_blank'><img src='" + info["img"] + "' /></a>";
+}) 
+$jsontip.html(strHtml);//显示处理后的数据 
+}) 
+}) 
+</script>
+</body>
+</html>
+ 
