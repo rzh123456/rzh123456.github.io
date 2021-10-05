@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>氙洛谷 Tag 列表</title>
+<script type="text/javascript" src="https://www.jb51.net/jslib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<div id="ok"></div>
+<script>
+$(function(){ 
+$.getJSON("tag.json",function(data){ 
+var $jsontip = $("#ok"); 
+var strHtml = "";
+$jsontip.empty(); 
+$.each(data,function(infoIndex,info){
+    strHtml+="<a href=\"https://www.luogu.com.cn/user/"+info["uid"]+">"+info["uid"]+"</a>:<span>"+info["tag"]+"</span><br>";
+}) 
+$jsontip.html(strHtml);//显示处理后的数据 
+}) 
+}) 
+</script>
+</body>
+</html>
+ 
