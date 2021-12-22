@@ -19,3 +19,8 @@
 # localhost name resolution is handled within DNS itself.
 #	127.0.0.1       localhost
 #	::1             localhost
+
+151.101.185.194 github.global.ssl.fastly.net
+151.101.13.194 github.global.ssl.fastly.net
+151.101.12.133 assets-cdn.github.com
+151.101.184.133 assets-cdn.github.com
