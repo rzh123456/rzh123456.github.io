@@ -50,3 +50,25 @@ li.top:hover,a.top:hover{
 .main{
 	text-align:center;
 }
+.dgui{
+	font-family:Times New Roman;
+	font-weight:600;
+}
+.dguiD{
+	color:red;
+}
+.dguiE{
+	color:orange;
+}
+.dguiV{
+	color:#ffc90e;
+}
+.dguiG{
+	color:green;
+}
+.dguiU{
+	color:blue;
+}
+.dguiI{
+	color:purple;
+}
