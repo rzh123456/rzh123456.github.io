@@ -50,6 +50,14 @@ li.top:hover,a.top:hover{
 .main{
 	text-align:center;
 }
+.maintext{
+	display:inline-block;
+	text-align:left;
+	width:1400px;
+	height:100%;
+	background:#add8e6;
+	padding:10px;
+}
 .dgui{
 	font-family:Times New Roman;
 	font-weight:600;
