@@ -1,0 +1,10 @@
+.definfo{
+	display: inline-block;
+	text-align:center;
+	border:rgb(0,162,162) 3px solid;
+	width:600px;
+	height:600px;
+	line-height: 150px;
+	font-size:50px;
+	background:linear-gradient(rgb(200, 255, 255),rgb(255, 255, 255),rgb(200, 255, 255));
+}
