@@ -1,0 +1,50 @@
+P1000 Super Mario
+P1001 A+B Problem
+P1002 [NOIP2002 Junior] Promoted Pawns
+P1003 [NOIP2011 Senior] Carpet Laying
+P1004 [NOIP2000 Senior] Grid Access
+P1005 [NOIP2007 Senior] Matrix Access 
+P1006 [NOIP2008 Senior] Passing Notes
+P1007 The Single-plank Bridge
+P1008 [NOIP1998 Junior] Triple Tap
+P1009 [NOIP1998 Junior] 阶乘之和
+P1010 [NOIP1998 Junior] 幂次方
+P1011 [NOIP1998 Senior] 车站
+P1012 [NOIP1998 Senior] 拼数
+P1013 [NOIP1998 Senior] 进制位
+P1014 [NOIP1999 Junior] Cantor 表
+P1015 [NOIP1999 Junior] 回文数
+P1016 [NOIP1999 Senior] 旅行家的预算
+P1017 [NOIP2000 Senior] 进制转换
+P1018 [NOIP2000 Senior] 乘积最大
+P1019 [NOIP2000 Senior] 单词接龙
+P1020 [NOIP1999 Junior] 导弹拦截
+P1021 [NOIP1999 Senior] 邮票面值设计
+P1022 [NOIP2000 Junior] 计算器的改良
+P1023 [NOIP2000 Junior] 税收与补贴问题
+P1024 [NOIP2001 Senior] 一元三次方程求解
+P1025 [NOIP2001 Senior] 数的划分
+P1026 [NOIP2001 Senior] 统计单词个数
+P1027 [NOIP2001 Senior] Car 的旅行路线
+P1028 [NOIP2001 Junior] 数的计算
+P1029 [NOIP2001 Junior] 最大公约数和最小公倍数问题
+P1030 [NOIP2001 Junior] 求先序排列
+P1031 [NOIP2002 Senior] 均分纸牌
+P1032 [NOIP2002 Senior] 字串变换
+P1033 [NOIP2002 Senior] 自由落体
+P1034 [NOIP2002 Senior] 矩形覆盖
+P1035 [NOIP2002 Junior] 级数求和
+P1036 [NOIP2002 Junior] 选数
+P1037 [NOIP2002 Junior] 产生数
+P1038 [NOIP2003 Senior] 神经网络
+P1039 [NOIP2003 Senior] 侦探推理
+P1040 [NOIP2003 Senior] 加分二叉树
+P1041 [NOIP2003 Senior] 传染病控制
+P1042 [NOIP2003 Junior] 乒乓球
+P1043 [NOIP2003 Junior] 数字游戏
+P1044 [NOIP2003 Junior] 栈
+P1045 [NOIP2003 Junior] 麦森数
+P1046 [NOIP2005 Junior] 陶陶摘苹果
+P1047 [NOIP2005 Junior] 校门外的树
+P1048 [NOIP2005 Junior] 采药
+P1049 [NOIP2001 Junior] 装箱问题
