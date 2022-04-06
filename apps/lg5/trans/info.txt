@@ -1,0 +1,40 @@
+本站公告
+Website Announcement
+任务计划
+TODO List
+智能推荐
+AI Recommendation
+友情链接
+Friendly Links
+推荐题库
+Recommended Problemsets
+洛谷开源项目
+Luogu Open Source Projects
+CYaRon 测试数据生成器
+CYaRon - Test Data Generator
+洛谷服务
+Luogu Services
+《深入浅出程序设计竞赛》
+Simple programming competition
+洛谷网校 - 算法竞赛学习
+Luogu Online School - Learning Algorithm Competition
+学校编程训练辅助工具
+School Programming Training Aids
+协办企业院校在线编程比赛
+Help to Host Online Programming Competition for Enterprises and Colleges
+洛谷根据您近期的做题情况，使用机器学习自动为您推荐符合您目前程度的题目。本列表每日更新一次。
+According to your recent problem making situation, Luogu uses machine learning to automatically recommend problems that meet your current level for you. This list is updated daily.
+有什么新鲜事告诉大家
+What's New:
+发射犇犇！
+Send Benben!
+我关注的
+What I Followed
+我发布的
+What I Posted
+举报
+Report
+回复
+Reply
+点击查看更多...
+Click to See More ...
