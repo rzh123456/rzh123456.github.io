@@ -1,1 +1,1 @@
-DevGUI v2.1.0
+DevGUI v2.2.0
