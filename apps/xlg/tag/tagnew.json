@@ -1,7 +1,7 @@
 [
 {"uid":"1","tag":[{"text":"kkk","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
 {"uid":"3","tag":[{"text":"洛谷官方","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
-{"uid":"237530","tag":[{"text":"哈","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"},{"text":"哈哈","tcolor":"#00ffff","bcolor":"#000000","radius":"6"},{"text":"哈哈哈","tcolor":"#000000","bcolor":"linear-gradient(#aaaaaa,#dddddd,#aaaaaa)","radius":"15"}]},
+{"uid":"237530","tag":[{"text":"哈","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"},{"text":"哈哈","tcolor":"#00ffff","bcolor":"#000000","radius":"6"},{"text":"哈哈哈","tcolor":"#000000","bcolor":"linear-gradient(90deg,#aaaaaa,#dddddd,#aaaaaa)","radius":"15"}]},
 {"uid":"484970","tag":[{"text":"呵呵呵","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
 {"uid":"460429","tag":[{"text":"Andy_L","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
 {"uid":"546369X","tag":[{"text":"HCute","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
