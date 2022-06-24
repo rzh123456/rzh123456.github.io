@@ -6,7 +6,20 @@
 <script type="text/javascript" src="https://www.jb51.net/jslib/jquery/jquery.min.js"></script>
 </head>
 <body>
-<p>Hello</p>
+<div id="ok"></div>
+<script>
+$(function(){ 
+$.getJSON("tag.json",function(data){ 
+var $jsontip = $("#ok"); 
+var strHtml = "";
+$jsontip.empty(); 
+$.each(data,function(infoIndex,info){
+    strHtml+="<a href=\"https://www.luogu.com.cn/user/"+info["uid"]+"\">"+info["uid"]+"</a>:<span>"+info["tag"]+"</span><br>";
+}) 
+$jsontip.html(strHtml);//显示处理后的数据 
+}) 
+}) 
+</script>
 </body>
 </html>
  
