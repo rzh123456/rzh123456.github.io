@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <script>
+            window.onload=function(){
+                var inpBar=document.getElementById("inpBar");
+                function del(){inpBar.value=inpBar.value.slice(0,-1);}
+                function ac(){inpBar.value=""}
+                function add1(){inpBar.value+="1";}
+                function add2(){inpBar.value+="2";}
+                function add3(){inpBar.value+="3";}
+                function add4(){inpBar.value+="4";}
+                function add5(){inpBar.value+="5";}
+                function add6(){inpBar.value+="6";}
+                function add7(){inpBar.value+="7";}
+                function add8(){inpBar.value+="8";}
+                function add9(){inpBar.value+="9";}
+                function add0(){inpBar.value+="0";}
+                function dot(){inpBar.value+=".";}
+                function lftbracket(){inpBar.value+="(";}
+                function rtbracket(){inpBar.value+=")";}
+                function opPlue(){inpBar.value+="+";}
+                function opMinus(){inpBar.value+="-";}
+                function opMul(){inpBar.value+="*";}
+                function opDiv(){inpBar.value+="/";}
+                function res(){
+                    try{inpBar.value=eval(inpBar.value);}
+                    catch(e){console.log(e)}
+                }
+            }
+        </script>
+        <style>
+            .vbtn{
+                font-size:32px;
+                font-family:Consolas;
+                background-color:lightblue;
+                Cursor:pointer;
+            }
+            .vbtn:hover{
+                background-color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <input id="inpBar" style="font-family:Consolas;font-size:54px" disabled>
+        <div>
+            <text class="vbtn" id="btn-clear">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+            <text class="vbtn" id="btn-del">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+            <br>
+            <text class="vbtn" id="btn-num1">&emsp;&emsp;&nbsp;1&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-num2">&emsp;&emsp;&nbsp;2&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-num3">&emsp;&emsp;&nbsp;3&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-pls">&emsp;&emsp;&nbsp;+&emsp;&emsp;&nbsp;</text>
+            <br>
+            <text class="vbtn" id="btn-num4">&emsp;&emsp;&nbsp;4&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-num5">&emsp;&emsp;&nbsp;5&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-num6">&emsp;&emsp;&nbsp;6&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-min">&emsp;&emsp;&nbsp;-&emsp;&emsp;&nbsp;</text>
+            <br>
+            <text class="vbtn" id="btn-num7">&emsp;&emsp;&nbsp;7&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-num8">&emsp;&emsp;&nbsp;8&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-num9">&emsp;&emsp;&nbsp;9&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-mul">&emsp;&emsp;&nbsp;*&emsp;&emsp;&nbsp;</text>
+            <br>
+            <text class="vbtn" id="btn-num0">&emsp;&emsp;&nbsp;0&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-lft">&emsp;&emsp;&nbsp;(&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-rt">&emsp;&emsp;&nbsp;)&emsp;&emsp;&nbsp;</text>
+            <text class="vbtn" id="btn-div">&emsp;&emsp;&nbsp;/&emsp;&emsp;&nbsp;</text>
+            <br>
+            <text class="vbtn" id="btn-dot">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;.&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</text>
+            <text class="vbtn" id="btn-eq">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;=&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</text>
+        </div>
+        <script>
+            var inpBar=document.getElementById("inpBar");
+            function del(){inpBar.value=inpBar.value.slice(0,-1);}
+            function ac(){inpBar.value=""}
+            function add1(){inpBar.value+="1";}
+            function add2(){inpBar.value+="2";}
+            function add3(){inpBar.value+="3";}
+            function add4(){inpBar.value+="4";}
+            function add5(){inpBar.value+="5";}
+            function add6(){inpBar.value+="6";}
+            function add7(){inpBar.value+="7";}
+            function add8(){inpBar.value+="8";}
+            function add9(){inpBar.value+="9";}
+            function add0(){inpBar.value+="0";}
+            function dot(){inpBar.value+=".";}
+            function lftbracket(){inpBar.value+="(";}
+            function rtbracket(){inpBar.value+=")";}
+            function opPlus(){inpBar.value+="+";}
+            function opMinus(){inpBar.value+="-";}
+            function opMul(){inpBar.value+="*";}
+            function opDiv(){inpBar.value+="/";}
+            function res(){
+                try{inpBar.value=eval(inpBar.value);}
+                catch(e){console.log(e)}
+            }
+            document.getElementById("btn-clear").onclick=function(){ac();};
+            document.getElementById("btn-del").onclick=function(){del();};
+            document.getElementById("btn-num1").onclick=function(){add1();};
+            document.getElementById("btn-num2").onclick=function(){add2();};
+            document.getElementById("btn-num3").onclick=function(){add3();};
+            document.getElementById("btn-pls").onclick=function(){opPlus();};
+            document.getElementById("btn-num4").onclick=function(){add4();};
+            document.getElementById("btn-num5").onclick=function(){add5();};
+            document.getElementById("btn-num6").onclick=function(){add6();};
+            document.getElementById("btn-min").onclick=function(){opMinus();};
+            document.getElementById("btn-num7").onclick=function(){add7();};
+            document.getElementById("btn-num8").onclick=function(){add8();};
+            document.getElementById("btn-num9").onclick=function(){add9();};
+            document.getElementById("btn-mul").onclick=function(){opMul();};
+            document.getElementById("btn-num0").onclick=function(){add0();};
+            document.getElementById("btn-lft").onclick=function(){lftbracket();};
+            document.getElementById("btn-rt").onclick=function(){rtbracket();};
+            document.getElementById("btn-div").onclick=function(){opDiv();};
+            document.getElementById("btn-dot").onclick=function(){dot();};
+            document.getElementById("btn-eq").onclick=function(){res();};
+            document.onkeydown=function(eve){
+                switch(eve.key){
+                    case '1':
+                        add1();
+                        break;
+                    case '2':
+                        add2();
+                        break;
+                    case '3':
+                        add3();
+                        break;
+                    case '4':
+                        add4();
+                        break;
+                    case '5':
+                        add5();
+                        break;
+                    case '6':
+                        add6();
+                        break;
+                    case '7':
+                        add7();
+                        break;
+                    case '8':
+                        add8();
+                        break;
+                    case '9':
+                        add9();
+                        break;
+                    case '0':
+                        add0();
+                        break;
+                    case '+':
+                        opPlus();
+                        break;
+                    case '-':
+                        opMinus();
+                        break;
+                    case '*':
+                        opMul();
+                        break;
+                    case '/':
+                        opDiv();
+                        break;
+                    case '.':
+                        dot();
+                        break;
+                    default:
+                        break;
+                }
+                if(eve.keyCode==13){
+                    res();
+                }
+                if(eve.keyCode==8){
+                    del();
+                }
+            };
+        </script>
+    </body>
+</html>
