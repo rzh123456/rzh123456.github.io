@@ -24,5 +24,6 @@
 {"uid":"661595","tag":[{"text":"Daydreamer","tcolor":"#ffffff","bcolor":"linear-gradient(90.0deg,rgb(256, 100, 0) 15%,rgba(128,128,256) 80.0%)","radius":"50px"}]},
 {"uid":"529247","tag":[{"text":"AC","tcolor":"#ffffff","bcolor":"#5eb95e","radius":"2"}]},
 {"uid":"555059","tag":[{"text":"クトリ","tcolor":"#ffffff","bcolor":"linear-gradient(120.0deg,rgba(100, 100, 254,0.9) 50% ,rgba(254,100,100,0.9) 21.5%)","radius":"0"}]},
-{"uid":"550545","tag":[{"text":"twillight","tcolor":"#ffffff","bcolor":"url(https://cdn.luogu.com.cn/upload/image_hosting/izh3zty7.png)","radius":"13"}]}
+{"uid":"550545","tag":[{"text":"twillight","tcolor":"#ffffff","bcolor":"url(https://cdn.luogu.com.cn/upload/image_hosting/izh3zty7.png)","radius":"13"}]},
+{"uid":"517637","tag":[{"text":"银河宇宙","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]}
 ]
