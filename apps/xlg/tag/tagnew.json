@@ -12,7 +12,7 @@
 {"uid":"224978","tag":[{"text":"O2","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
 {"uid":"529038","tag":[{"text":"自由飞翔","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
 {"uid":"691537","tag":[{"text":"BJ垫底人","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
-{"uid":"331189","tag":[{"text":"qwq","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
+{"uid":"331189","tag":[{"text":"qwq","tcolor":"#ffffff","bcolor":"linear-gradient(90deg,red,orange,yellow,green,aqua,blue,purple)","radius":"2"},{"text":"&nbsp;","tcolor":"#ffffff","bcolor":"url(https://rzh123456.github.io/image/lgsvg/gold.svg)","radius":"2"}]},
 {"uid":"583681","tag":[{"text":"AC","tcolor":"#ffffff","bcolor":"#52c41a","radius":"2"},{"text":"WA","tcolor":"#ffffff","bcolor":"#e74c3c","radius":"2"},{"text":"RE","tcolor":"#ffffff","bcolor":"#9d3dcf","radius":"2"},{"text":"TLE","tcolor":"#ffffff","bcolor":"#052242","radius":"2"},{"text":"MLE","tcolor":"#ffffff","bcolor":"#052242","radius":"2"},{"text":"OLE","tcolor":"#ffffff","bcolor":"#052242","radius":"2"},{"text":"UKE","tcolor":"#ffffff","bcolor":"#0e1d69","radius":"2"},{"text":"CE","tcolor":"#ffffff","bcolor":"#fadb14","radius":"2"}]},
 {"uid":"720108","tag":[{"text":"小蒟蒻的橙","tcolor":"#000000","bcolor":"linear-gradient(90deg,#ffd700 50%,#c0c0c0 50%)","radius":"0"},{"text":"我不水犇了","tcolor":"#000000","bcolor":"linear-gradient(90deg,#ff0000,#ffff00)","radius":"0"}]},
 {"uid":"424089","tag":[{"text":"奆佬","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
