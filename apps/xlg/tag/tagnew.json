@@ -32,5 +32,6 @@
 {"uid":"620179","tag":[{"text":"蒟蒻","tcolor":"green","bcolor":"blue","radius":"2"}]},
 {"uid":"528478","tag":[{"text":"extra","tcolor":"#f0d800","bcolor":"red","radius":"15"}]},
 {"uid":"578029","tag":[{"text":"ivyjiao","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]},
-{"uid":"631680","tag":[{"text":"逊爆了","tcolor":"#ffffff","bcolor":"linear-gradient(135deg,#00a2a2,#00ffff)","radius":"2"}]}
+{"uid":"631680","tag":[{"text":"逊爆了","tcolor":"#ffffff","bcolor":"linear-gradient(135deg,#00a2a2,#00ffff)","radius":"2"}]},
+{"uid":"302394","tag":[{"text":"railgun","tcolor":"#ffffff","bcolor":"#00a2a2","radius":"2"}]}
 ]
